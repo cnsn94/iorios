@@ -37,20 +37,22 @@ public class GelatoFragment extends Fragment {
 
         String [] listy =
                 {
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor",
-                        "Flavor"
+                        "Biscuit Tortoni",
+                        "Pistachio",
+                        "Green Tea",
+                        "Zuppa Inglese",
+                        "Cannoli",
+                        "Stracciatella",
+                        "Kahlua Tiramisu",
+                        "Mango Sorbetto",
+                        "Hazelnut",
+                        "Venezuelan Dark Chocolate",
+                        "Belgian Chocolate",
+                        "German Chocolate Cake",
+                        "Profiterole",
+                        "Spumoni",
+                        "Mexican Vanila",
+                        "Bacio"
                 };
 
         List<String> gelatoList = new ArrayList<String>(Arrays.asList(listy));

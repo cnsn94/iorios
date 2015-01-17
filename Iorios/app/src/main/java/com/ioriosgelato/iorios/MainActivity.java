@@ -8,6 +8,18 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
+    //Integer[] imageId = {
+     //       R.drawable.image1,
+     //       R.drawable.image1,
+    //        R.drawable.image1,
+    //        R.drawable.image1,
+  //         R.drawable.image1,
+   //         R.drawable.image1,
+   //         R.drawable.image1,
+   //         R.drawable.image1
+   // }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +53,17 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+   // @Override
+    //public static Drawable LoadImageFromWebOperations(String url) {
+     //   try {
+     //       InputStream is = (InputStream) new URL(url).getContent();
+     //       Drawable d = Drawable.createFromStream(is, "src name");
+       //     return d;
+       // } catch (Exception e) {
+        //    return null;
+       // }
+  //  }
 }
 
 // xml TextView OG stuff
