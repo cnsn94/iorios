@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,6 +24,8 @@ import java.util.List;
 /**
  * Created by Trevor0 on 1/17/2015.
  */
+
+
 public class GelatoFragment extends Fragment {
     public GelatoFragment() {
     }
@@ -62,3 +66,4 @@ public class GelatoFragment extends Fragment {
         return rootView;
     }
 }
+
