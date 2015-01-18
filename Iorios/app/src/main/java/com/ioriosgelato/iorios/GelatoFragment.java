@@ -27,6 +27,7 @@ import java.util.List;
 
 
 public class GelatoFragment extends Fragment {
+    public GelatoFragment(){}
 
       private final MainActivity a;
        public GelatoFragment(MainActivity in) {
