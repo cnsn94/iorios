@@ -39,7 +39,7 @@ public class GelatoFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         ListView list;
-        String [] web =
+        final String [] web =
                 {
                         "Biscuit Tortoni",
                         "Pistachio",
@@ -59,7 +59,7 @@ public class GelatoFragment extends Fragment {
                         "Bacio"
                 };
 
-        Integer [] imageId = {
+        final Integer [] imageId = {
                 R.drawable.gel_biscuit_tortoni,
                 R.drawable.gel_pistachio,
                 R.drawable.gel_green_tea,
@@ -88,11 +88,9 @@ public class GelatoFragment extends Fragment {
                 Intent intent = new Intent();
                 intent.setClass(v.getContext(), DetailFragment.class);
                 intent.putExtra("row", row);
+                intent.putExtra("gelato_name", web[row]);
+                intent.putExtra("gelato_pic", imageId[row]);
                 startActivity(intent);
-                if(row == 1)
-                {
-                    System.exit(0);
-                }
             }
         });
 
