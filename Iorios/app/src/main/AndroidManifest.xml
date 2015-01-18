@@ -9,6 +9,16 @@ package="com.ioriosgelato.iorios" >
     android:logo="@drawable/logoplus"
     android:theme="@style/Base.Theme.AppCompat.Light" >
     <activity
+        android:name=".SplashActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+   >
+        <intent-filter>
+            <action android:name="android.intent.action.SPLASH" />
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+   </activity>
+    <activity
         android:name=".MainActivity"
         android:screenOrientation="portrait"
         android:configChanges="keyboardHidden|orientation|screenSize"

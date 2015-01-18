@@ -2,7 +2,7 @@ package com.ioriosgelato.iorios;
 
 /**
  * Created by Cher on 1/18/2015.
- *
+ */
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,21 +11,21 @@ import android.view.Menu;
 
 public class SplashActivity extends Activity {
 
-    /** Duration of wait *
+    /** Duration of wait */
     private final int SPLASH_DISPLAY_LENGTH = 1000;
 
-    /** Called when the activity is first created.
+    /** Called when the activity is first created.*/
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.splash_screen);
 
         /* New Handler to start the Menu-Activity
-         * and close this Splash-Screen after some seconds.
+         * and close this Splash-Screen after some seconds.*/
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
-                /* Create an Intent that will start the Menu-Activity. *
+                /* Create an Intent that will start the Menu-Activity. */
                 Intent mainIntent = new Intent(SplashActivity.this,
                         Menu.class);
                 SplashActivity.this.startActivity(mainIntent);
@@ -33,4 +33,4 @@ public class SplashActivity extends Activity {
             }
         }, SPLASH_DISPLAY_LENGTH);
     }
-}*/
+}
