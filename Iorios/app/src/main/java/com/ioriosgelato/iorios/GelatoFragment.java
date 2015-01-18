@@ -85,10 +85,10 @@ public class GelatoFragment extends Fragment {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View v, int row, long index) {
-                //Intent intent = new Intent();
-                //intent.setClass(this, DetailFragment.class);
-                //intent.putExtra("row", row);
-                //startActivity(intent);
+                Intent intent = new Intent();
+                intent.setClass(v.getContext(), DetailFragment.class);
+                intent.putExtra("row", row);
+                startActivity(intent);
                 if(row == 1)
                 {
                     System.exit(0);
