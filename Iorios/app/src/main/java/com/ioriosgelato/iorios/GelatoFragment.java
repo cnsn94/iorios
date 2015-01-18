@@ -27,13 +27,15 @@ import java.util.List;
 
 
 public class GelatoFragment extends Fragment {
-       private final MainActivity a;
+
+      private final MainActivity a;
        public GelatoFragment(MainActivity in) {
             this.a = in;
        }
 
     @Override
        public View onCreateView (final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         ListView list;
@@ -75,9 +77,10 @@ public class GelatoFragment extends Fragment {
                 R.drawable.gel_mexican_vanilla,
                 R.drawable.gel_bacio
         };
-               ListAdapter adapter = new ListAdapter(this.a, web, imageId);
-               list = (ListView) rootView.findViewById(R.id.listview_gelato);
-               list.setAdapter(adapter);
+
+        ListAdapter adapter = new ListAdapter(this.a, web, imageId);
+        list = (ListView) rootView.findViewById(R.id.listview_gelato);
+        list.setAdapter(adapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -104,4 +107,3 @@ public class GelatoFragment extends Fragment {
         return rootView;
     }
 }
-
