@@ -56,7 +56,15 @@ public class GelatoFragment extends Fragment {
                         "Profiterole",
                         "Spumoni",
                         "Mexican Vanila",
-                        "Bacio"
+                        "Bacio",
+                        "Passion Fruit Sorbetto",
+                        "Guinness Shortbread",
+                        "Mascarpone Fig",
+                        "Chestnut Praline",
+                        "Peanut Butter Banana",
+                        "Blood Orange Sorbetto",
+                        "White Chocolate Cranberry Swirl",
+                        "Caramelized Pear"
                 };
 
         final Integer [] imageId = {
@@ -75,7 +83,15 @@ public class GelatoFragment extends Fragment {
                 R.drawable.gel_profiterole,
                 R.drawable.gel_spumoni,
                 R.drawable.gel_mexican_vanilla,
-                R.drawable.gel_bacio
+                R.drawable.gel_bacio,
+                R.drawable.italy,
+                R.drawable.italy,
+                R.drawable.italy,
+                R.drawable.italy,
+                R.drawable.italy,
+                R.drawable.italy,
+                R.drawable.italy,
+                R.drawable.italy
         };
 
         ListAdapter adapter = new ListAdapter(this.a, web, imageId);
