@@ -30,27 +30,27 @@
             android:layout_height="wrap_content"/>-->
 
         <TextView
+            android:typeface="serif"
             android:id="@+id/list_item_gelato_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <!--android:layout_gravity="center"/> For center justification -->
+            <!--android:layout_gravity="center"-->
 
     </LinearLayout>
 
-    <!--<LinearLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/list_item_high_textview"
+        <ImageView
+            android:id="@+id/star"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"
+            android:src="@drawable/starry" />
 
-        <TextView
-            android:id="@+id/list_item_low_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout> -->
+    </LinearLayout>
 
 </LinearLayout>
